@@ -12,7 +12,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    pointer-events: none;
  }
 
 .heart {
@@ -46,6 +47,42 @@
     height: 100%;
     background: inherit;
     border-radius: 100%;
+}
+.gifts {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gift {
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #eeeeee;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+
+}
+
+.donate {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: #44c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+        box-shadow: 0px 5px 10px #ccc;
+
+
 }
 
 @-webkit-keyframes love {
@@ -95,7 +132,19 @@ var love = setInterval(function() {
 	<div class="bg_heart"></div>
 
 	<img src="title.png" style="width: 500px" />
-	<h3>For donations, please click <a href="https://www.instagram.com/celines95_/">here</a></p>
+	<h3>Please choose the gift you want to donate to:</p>
+    <div class="gifts">
+        <div class="gift" style="background-image: url(earrings.png)">
+            <a class="donate" href="https://www.paypal.com/donate/?hosted_button_id=R56CS6VF4Z4U8">Donate</a>
+        </div>
+        <div class="gift" style="background-image: url(small.webp)">
+            <a class="donate" href="https://www.paypal.com/donate/?hosted_button_id=R56CS6VF4Z4U8">Donate</a>
+        </div>
+        <div class="gift" style="background-image: url(big.webp)">
+            <a class="donate" href="https://www.paypal.com/donate/?hosted_button_id=R56CS6VF4Z4U8">Donate</a>
+        </div>
+    </div>
+
 	<div style="padding-left: 100px; padding-right: 100px">		
 		<img src="IMG_1904.jpeg" style="width: 100%;"/>
 	</div>
